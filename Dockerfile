@@ -1,5 +1,5 @@
 FROM node:latest
-RUN apt-get update && apt-get -y install python3
+RUN apt-get update && apt-get -y install python
 WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
