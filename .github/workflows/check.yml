@@ -43,10 +43,14 @@ jobs:
               with:
                   name: build-files
                   path: dist
-
-            - name: Build image
-              uses: docker/build-push-action@v3
-              with:
-                  context: .
-                  push: false
-                  platforms: "linux/amd64,linux/arm64,linux/arm/v7"
+            - name: Test
+              run: |
+                  ls
+                  cd dist
+                  ls
+            # - name: Build image
+            #   uses: docker/build-push-action@v3
+            #   with:
+            #       context: .
+            #       push: false
+            #       platforms: "linux/amd64,linux/arm64,linux/arm/v7"
