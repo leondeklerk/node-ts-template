@@ -42,15 +42,11 @@ jobs:
               uses: actions/download-artifact@v3
               with:
                   name: build-files
+                  path: dist
 
-            - name: Test
-              shell: bash
-              run: |
-                  ls
-
-            # - name: Build image
-            #   uses: docker/build-push-action@v3
-            #   with:
-            #       context: .
-            #       push: false
-            #       platforms: "linux/amd64,linux/arm64,linux/arm/v7"
+            - name: Build image
+              uses: docker/build-push-action@v3
+              with:
+                  context: .
+                  push: false
+                  platforms: "linux/amd64,linux/arm64,linux/arm/v7"
