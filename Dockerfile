@@ -6,5 +6,5 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY dist ./
 COPY scripts ./scripts/
-RUN npm ci --omit=dev
+RUN npm ci --omit=dev --dd
 CMD ["node", "index.js"]

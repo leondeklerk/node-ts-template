@@ -1,5 +1,5 @@
-const isCi = process.env.CI !== undefined;
-if (!isCi) {
+const preventInstall = process.env.CI !== undefined || process.env.NODE_ENV === "production";
+if (!preventInstall) {
 	import("husky").then((husky) => {
 		husky.install();
 	});
