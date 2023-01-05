@@ -3,8 +3,8 @@ WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json ./
 COPY package-lock.json ./
-ADD http://date.jsontest.com /etc/builddate
-COPY --from=dist * ./
+ADD dist .
+# COPY --from=dist * ./
 RUN ls
 RUN npm ci --omit dev --ignore-scripts
 CMD ["node", "index.js"]
