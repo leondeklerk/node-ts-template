@@ -3,7 +3,6 @@ npm-debug.log
 .github
 .env
 .husky
-dist
 .eslintignore
 .eslintrc
 .markdownlint.json
