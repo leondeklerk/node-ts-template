@@ -1,10 +1,11 @@
 FROM node:19-alpine
+RUN ls
 WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json ./
 COPY package-lock.json ./
-ADD dist .
+# ADD dist .
 # COPY --from=dist * ./
 RUN ls
-RUN npm ci --omit dev --ignore-scripts
-CMD ["node", "index.js"]
+# RUN npm ci --omit dev --ignore-scripts
+# CMD ["node", "index.js"]
