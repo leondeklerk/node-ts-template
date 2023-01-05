@@ -50,5 +50,4 @@ jobs:
                   context: .
                   push: false
                   no-cache: true
-                  build-contexts: dist=./dist
                   # platforms: "linux/amd64,linux/arm64,linux/arm/v7"
