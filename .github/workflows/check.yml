@@ -45,7 +45,8 @@ jobs:
 
             - name: Test
               shell: bash
-              run: ls
+              run: |
+                  ls
 
             # - name: Build image
             #   uses: docker/build-push-action@v3
