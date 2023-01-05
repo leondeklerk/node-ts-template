@@ -1,5 +1,5 @@
 FROM node:19-alpine
-RUN --mount=target=. ls
+RUN --mount=type=bind,target=/context ls /context
 WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json ./
