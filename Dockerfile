@@ -1,5 +1,5 @@
 FROM node:19-alpine
-RUN --mount=taget=. ls
+RUN --mount=target=. ls
 WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json ./
