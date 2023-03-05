@@ -1,3 +1,10 @@
-# node-ts-template
+# NodeJS TypeScript template
 
-A node typescript template repository
+A template repository containing a standard setup for TypeScript based NodeJS projects.
+
+Configured with the following:
+
+- Linting with Eslint and Prettier
+- Pre commit type-checking and linting with Husky
+- NPM scripts for lint, type-check, build, and development.
+- Renovate dependency updates
