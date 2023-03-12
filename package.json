@@ -5,7 +5,7 @@
 	"main": "index.ts",
 	"scripts": {
 		"lint": "eslint --ext .ts,.js,.json --ignore-path .gitignore .",
-		"dev": "vite-node -w src/index.ts",
+		"dev": "tsx watch src/index.ts",
 		"build": "run-p type-check build-only",
 		"type-check": "tsc --noEmit",
 		"start": "node dist/index.js",
@@ -31,7 +31,7 @@
 		"lint-staged": "13.1.2",
 		"npm-run-all": "4.1.5",
 		"prettier": "2.8.4",
-		"typescript": "4.9.5",
-		"vite-node": "0.29.2"
+		"tsx": "3.12.4",
+		"typescript": "4.9.5"
 	}
 }
