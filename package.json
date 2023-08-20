@@ -26,9 +26,9 @@
 		"@typescript-eslint/eslint-plugin": "6.4.0",
 		"@typescript-eslint/parser": "6.4.0",
 		"eslint": "8.47.0",
-		"eslint-config-prettier": "8.10.0",
+		"eslint-config-prettier": "9.0.0",
 		"husky": "8.0.3",
-		"lint-staged": "13.3.0",
+		"lint-staged": "14.0.0",
 		"prettier": "3.0.2",
 		"tsx": "3.12.7",
 		"typescript": "5.1.6"
