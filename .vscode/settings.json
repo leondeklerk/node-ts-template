@@ -1,5 +1,6 @@
 {
 	"editor.codeActionsOnSave": {
-		"quickfix.biome": "always"
+		"quickfix.biome": "always",
+		"source.organizeImports.biome": "always"
 	}
 }
