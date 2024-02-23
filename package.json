@@ -17,7 +17,7 @@
 	"author": "Leon de Klerk",
 	"license": "MIT",
 	"lint-staged": {
-		"*": "biome check"
+		"*": "biome check --no-errors-on-unmatched"
 	},
 	"repository": {
 		"type": "git",
