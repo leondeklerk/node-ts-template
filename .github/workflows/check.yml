@@ -17,6 +17,8 @@ jobs:
               run: bun install
             - name: Check project files
               run: bun run check
+            - name: Type-check project files
+              run: bun run type-check
             - name: Build project
               run: bun run build
             #- name: Upload build files
