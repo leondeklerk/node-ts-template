@@ -1,33 +1,33 @@
 {
 	"name": "node-ts-template",
 	"version": "1.0.0",
-	"description": "Node typescript template",
-	"main": "index.ts",
-	"scripts": {
-		"check": "npx @biomejs/biome check .",
-		"check:fix": "npx @biomejs/biome check --apply .",
-		"dev": "tsx watch src/index.ts",
-		"build": "npm run type-check && npm run build-only",
-		"type-check": "tsc --noEmit",
-		"start": "node dist/index.js",
-		"prepare": "node scripts/install.mjs",
-		"build-only": "tsc"
-	},
-	"keywords": [],
 	"author": "Leon de Klerk",
-	"license": "MIT",
-	"lint-staged": {
-		"*": "biome check --no-errors-on-unmatched"
-	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/leondeklerk/node-ts-template"
 	},
+	"main": "index.ts",
 	"devDependencies": {
-		"@biomejs/biome": "1.5.3",
+		"@biomejs/biome": "1.6.3",
+		"@types/bun": "^1.0.12",
 		"husky": "9.0.11",
 		"lint-staged": "15.2.2",
-		"tsx": "4.7.1",
-		"typescript": "5.3.3"
+		"typescript": "5.4.3"
+	},
+	"description": "Node typescript template",
+	"keywords": [],
+	"license": "MIT",
+	"lint-staged": {
+		"*": "biome check --no-errors-on-unmatched"
+	},
+	"scripts": {
+		"check": "bunx @biomejs/biome check .",
+		"check:fix": "bunx @biomejs/biome check --apply .",
+		"dev": "bun --watch run src/index.ts",
+		"build": "bun run type-check && bun run build-only",
+		"type-check": "tsc --noEmit -p tsconfig.json",
+		"start": "bun run dist/index.js",
+		"prepare": "bun run scripts/install.mjs",
+		"build-only": "bun build src/index.ts --outdir ./dist"
 	}
 }
