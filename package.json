@@ -9,7 +9,7 @@
 	"main": "index.ts",
 	"devDependencies": {
 		"@biomejs/biome": "1.6.3",
-		"@types/bun": "^1.0.12",
+		"@types/bun": "1.0.12",
 		"husky": "9.0.11",
 		"lint-staged": "15.2.2",
 		"typescript": "5.4.3"
