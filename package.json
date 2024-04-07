@@ -28,6 +28,6 @@
 		"type-check": "tsc --noEmit -p tsconfig.json",
 		"start": "bun run dist/index.js",
 		"prepare": "bun run scripts/install.mjs",
-		"build-only": "bun build src/index.ts --outdir ./dist"
+		"build-only": "bunx --bun tsc"
 	}
 }
