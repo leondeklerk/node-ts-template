@@ -9,4 +9,4 @@ npm-debug.log
 .prettierrc
 Dockerfile
 .editorconfig
-bun.lockdb
+package-lock.json

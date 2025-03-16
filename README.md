@@ -6,5 +6,5 @@ Configured with the following:
 
 -   Linting with Eslint and Prettier
 -   Pre commit type-checking and linting with Husky
--   Bun scripts for lint, type-check, build, and development.
+-   Npm scripts for lint, type-check, build, and development.
 -   Renovate dependency updates

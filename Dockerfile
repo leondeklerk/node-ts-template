@@ -1,9 +1,9 @@
-FROM oven/bun
+FROM node:lts-alpine
 WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json ./
 COPY package-lock.json ./
 COPY dist ./
 COPY scripts ./scripts/
-RUN bun i
-CMD ["bun", "run", "index.js"]
+RUN npm i
+CMD ["node", "index.js"]
