@@ -1,11 +1,15 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"organizeImports": {
-		"enabled": true
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"ignore": ["dist", ".husky", ".vscode", "node_modules"]
+		"includes": ["**", "!**/dist", "!**/.husky", "!**/.vscode", "!**/node_modules"]
 	},
 	"formatter": {
 		"enabled": true,
