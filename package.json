@@ -8,8 +8,8 @@
 	},
 	"main": "index.ts",
 	"devDependencies": {
-		"@biomejs/biome": "2.5.14",
-		"@types/node": "24.13.6",
+		"@biomejs/biome": "2.5.15",
+		"@types/node": "24.19.1",
 		"husky": "9.1.7",
 		"lint-staged": "16.4.0",
 		"tsx": "4.23.15",
