@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/tsconfig.json",
 	"compilerOptions": {
 		"target": "esnext",
-		"module": "commonjs",
+		"module": "esnext",
 		"allowJs": true,
 		"checkJs": true,
 		"outDir": "dist",
@@ -14,11 +14,10 @@
 		"strictNullChecks": true,
 		"resolveJsonModule": true,
 		"sourceMap": true,
-		"baseUrl": ".",
 		"noImplicitAny": false,
 		"skipLibCheck": true,
 		"paths": {
-			"*": ["*", "src/*"]
+			"*": ["./*", "./src/*"]
 		}
 	},
 	"exclude": ["node_modules", "dist"],
